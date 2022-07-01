@@ -9,34 +9,34 @@ def calories_gen():
     data = request.get_json()
     # breakfast
     if data['breakfasts'] == 'Bread and eggs':
-        allcalories += 10
+        allcalories += 70
     if data['breakfasts'] == 'French Toast':
-        allcalories += 40      
+        allcalories += 90    
     if data['breakfasts'] == 'Nuts and Seeds Granola':
-        allcalories += 50
+        allcalories += 90
     if data['breakfasts'] == 'Norwegian Risgrøt Rice Porridge':
-        allcalories += 45
+        allcalories += 76
     if data['breakfasts'] == 'Cheesy skillet hash brown & eggs':
-        allcalories += 25
+        allcalories += 73
     if data['breakfasts'] == 'Pancakes':
-        allcalories += 30
+        allcalories += 98
     if data['breakfasts'] == 'Waffles with stawberries':
-        allcalories += 30
+        allcalories += 149
 
     # lunch
     if data['lunches'] == 'Veg Pizza':
-        allcalories += 5
+        allcalories += 180
     if data['lunches'] == 'Chicken and chips':
-        allcalories += 15
+        allcalories += 140
     if data['lunches'] == 'Burger and Chips':
-        allcalories += 30
+        allcalories += 210
     if data['lunches'] == 'Pasta':
-        allcalories += 50
+        allcalories += 120
     if data['lunches'] == 'Lentil soup':
-        allcalories += 100
+        allcalories += 70
     if data['lunches'] == 'Mac and Cheese':
-        allcalories += 250
+        allcalories += 187
     if data['lunches'] == 'Beef burger':
-        allcalories += 150
+        allcalories += 120
 
     return str(allcalories)
