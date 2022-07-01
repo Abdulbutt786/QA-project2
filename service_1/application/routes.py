@@ -9,15 +9,11 @@ from application.models import Meal
 def index():
 	return render_template('index.html')
 
-@app.route('/generate')
+@app.route('/')
 def home():
     breakfast = requests.get('http://service2:5000/get/breakfast')
     lunch = requests.get('http://service3:5000/get/lunch', data=breakfast.text)
-    price = requests.post('http://service4:5000/price',data=lunch.txt )
+    price = requests.post('http://service4:5000/calories',data=lunch.txt )
 
-    db_info = Meals(breakfast=breakfast.text, lunch=lunch.text, price=price.text)
-	db.session.add(Meals)
-	db.session.commit()
-	recent = Meal.query.first()
 
     return render_template('home.html', breakfast=
