@@ -13,7 +13,7 @@ def index():
 def home():
     breakfast = requests.get('http://service2:5000/get/breakfast')
     lunch = requests.get('http://service3:5000/get/lunch', data=breakfast.text)
-    price = requests.post('http://service4:5000/calories',data=lunch.txt )
+    calories = requests.post('http://service4:5000/calories',data=lunch.txt )
 
 
     return render_template('home.html', breakfast=
