@@ -21,13 +21,13 @@ class Testmeal1(TestBase):
         with requests_mock.Mocker() as m:
             m.get('http://service2:5000/get_breakfast', text='Bread and eggs')
             m.get('http://service3:5000/get_lunch', text='Veg Pizza')
-            m.post('http://service4:5000/calories', text='140')
+            m.post('http://service4:5000/calories', text='70')
             
             response =self.client.get(url_for('index'))
             self.assert200(response)
             self.assertIn(b'Bread and eggs', response.data)
             self.assertIn(b'Veg Pizza', response.data)
-            self.assertIn(b'140', response.data)
+            self.assertIn(b'', response.data)
 
 #Test meal 2
 class Testmeal2(TestBase):
@@ -35,10 +35,24 @@ class Testmeal2(TestBase):
         with requests_mock.Mocker() as m:
             m.get('http://service2:5000/get_breakfast', text='French Toast')
             m.get('http://service3:5000/get_lunch', text='Chicken and chips')
-            m.post('http://service4:5000/calories', text='140')
+            m.post('http://service4:5000/calories', text='')
             
             response =self.client.get(url_for('index'))
             self.assert200(response)
             self.assertIn(b'French Toast', response.data)
             self.assertIn(b'Chicken and chips', response.data)
-            self.assertIn(b'140', response.data)
+            self.assertIn(b'', response.data)
+
+#Test meal 2
+class Testmeal2(TestBase):
+    def test_meal2(self):
+        with requests_mock.Mocker() as m:
+            m.get('http://service2:5000/get_breakfast', text='French Toast')
+            m.get('http://service3:5000/get_lunch', text='Chicken and chips')
+            m.post('http://service4:5000/calories', text='')
+            
+            response =self.client.get(url_for('index'))
+            self.assert200(response)
+            self.assertIn(b'French Toast', response.data)
+            self.assertIn(b'Chicken and chips', response.data)
+            self.assertIn(b'', response.data)
