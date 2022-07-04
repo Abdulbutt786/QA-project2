@@ -6,5 +6,5 @@ import requests
 def index():
     breakfast = requests.get('http://service2:5000/get_breakfast').text
     lunch = requests.get('http://service3:5000/get_lunch').text
-    calories = requests.post('http://service4:5000/calories',json={'breakfast':'breakfasts','lunch':'lunches'})
-    return render_template('home.html', breakfast=breakfast, lunch=lunch, calories=calories)
+    calories = requests.post('http://service4:5000/calories',json={'breakfasts':breakfast,'lunches':lunch})
+    return render_template('home.html', breakfast=breakfast, lunch=lunch, calories=calories.text)
