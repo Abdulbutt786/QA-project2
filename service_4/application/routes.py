@@ -38,5 +38,9 @@ def calories_gen():
         allcalories += 187
     if data['lunches'] == 'Beef burger':
         allcalories += 120
+    if data['lunches'] == 'Grilled Cheese':
+        allcalories += 387
+    
+
 
     return str(allcalories)
