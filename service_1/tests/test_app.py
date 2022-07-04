@@ -30,7 +30,6 @@ class Testmeal1(TestBase):
             self.assertIn(b'', response.data)
 
 #Test meal 2
-class Testmeal2(TestBase):
     def test_meal2(self):
         with requests_mock.Mocker() as m:
             m.get('http://service2:5000/get_breakfast', text='French Toast')
@@ -44,8 +43,7 @@ class Testmeal2(TestBase):
             self.assertIn(b'', response.data)
 
 #Test meal 2
-class Testmeal2(TestBase):
-    def test_meal2(self):
+    def test_meal3(self):
         with requests_mock.Mocker() as m:
             m.get('http://service2:5000/get_breakfast', text='French Toast')
             m.get('http://service3:5000/get_lunch', text='Chicken and chips')
