@@ -47,3 +47,17 @@ class Testcalories(TestBase):
         self.assertIn(b'193', response.data)
 
 
+    def test_get_calories8(self):
+        response = self.client.post(url_for('calories_gen'), json={"breakfasts": "Cheesy skillet hash brown & eggs", "lunches": "Grilled Cheese"})
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'460', response.data)
+
+    def test_get_calories9(self):
+        response = self.client.post(url_for('calories_gen'), json={"breakfasts": "Cheesy skillet hash brown & eggs", "lunches": "Ramen noodles"})
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'413', response.data)
+    
+    def test_get_calories10(self):
+        response = self.client.post(url_for('calories_gen'), json={"breakfasts": "Cheesy skillet hash brown & eggs", "lunches": "Chicken fried rice"})
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'353', response.data)
