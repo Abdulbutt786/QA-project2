@@ -32,7 +32,7 @@
       update_cache: yes
 
   - name: add userpermissions
-    shell: "usermod -aG docker {{ lookup('env','abdulbutt') }}"
+    shell: "usermod -aG docker abdulbutt"
 
   # Installs Docker SDK
 
@@ -41,7 +41,7 @@
       name: python3-pip
 
   - name: install python sdk
-    become_user: "{{ lookup('env','abdulbutt') }}"
+    become_user: abdulbutt
     pip:
       name:
         - docker
