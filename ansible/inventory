@@ -1,0 +1,2 @@
+34.142.9.68 ansible_sudo_pass=password ansible_ssh_user=abdulbutt
+34.142.119.117 ansible_sudo_pass=password ansible_ssh_user=abdulbutt
