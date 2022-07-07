@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Ansible playbook run'){
             steps{
-                sh "ansible-playbook ansible/playbook1.yaml"
+                sh 'ssh abdulbutt@dev-machine \'/home/abdulbutt/.local/bin/ansible-playbook -i ansible/inventory.yaml ansible/playbook1.yaml\''
             }} 
         stage('Building and pushing images'){
             environment{
