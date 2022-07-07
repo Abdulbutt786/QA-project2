@@ -26,7 +26,7 @@ pipeline{
             steps{
                 sh "scp nginx.conf abdulbutt@docker-manager:/home/abdulbutt/manager/nginx.conf"
                 sh "scp docker-compose.yaml abdulbutt@docker-manager:/home/abdulbutt/manager/docker-compose.yaml"
-                sh "ssh abdulbutt@docker-manager 'docker stack deploy -c docker-compose.yaml Meal'"
+                sh "ssh abdulbutt@docker-manager 'docker stack deploy -c /home/abdulbutt/manager/docker-compose.yaml Meal'"
             }
         }
     }
