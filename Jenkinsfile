@@ -21,7 +21,7 @@ pipeline{
                 sh "docker-compose push"
             }
         }
-    } 
+        } 
 
     }    
 }
