@@ -1,0 +1,2 @@
+docker-manager ansible_sudo_pass=password ansible_ssh_user=abdulbutt
+docker-worker ansible_sudo_pass=password ansible_ssh_user=abdulbutt
