@@ -20,6 +20,12 @@ pipeline{
                 sh "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
                 sh "docker-compose push"
             }
+        stage('Deploy')
+            steps{
+                sh "scp nginx.conf abdulbutt@docker-manager:home/manager/nginx.conf"
+                sh "scp docker-compose.yaml abdulbutt@docker-manager:home/manager/docker-compose.yaml"
+                sh "ssh abdulbutt@docker-manger 'docker stack deploy -c docker-compose.yaml Meal'"
+            }
         }
         }
     }
