@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   service1:
-    image: abdulbutt123/frontend:v1
+    image: abdulbutt123/frontend:v2
     build: ./service_1
     container_name: service1
     deploy:
@@ -9,7 +9,7 @@ services:
     networks:
       - meal-net
   service2:
-    image: abdulbutt123/random_breakfast:v1
+    image: abdulbutt123/random_breakfast:v2
     build: ./service_2
     container_name: service2
     deploy:
@@ -17,7 +17,7 @@ services:
     networks:
       - meal-net
   service3:
-    image: abdulbutt123/random_lunch:v1
+    image: abdulbutt123/random_lunch:v2
     build: ./service_3
     container_name: service3
     deploy:
