@@ -8,9 +8,8 @@ pipeline{
         }
         stage('Ansible playbook run'){
             steps{
-                sh 'ansible-playbook -i ansible/inventory.yaml ansible/playbook1.yaml'
-        }
-        }
+                sh "ansible-playbook ansible/playbook1.yaml"
+            }} 
         stage('Building and pushing images'){
             environment{
                 DOCKERHUB_USERNAME=credentials('DOCKER_UNAME')
@@ -22,7 +21,5 @@ pipeline{
                 sh "docker-compose push"
             }
         }
-        
-
-    }    
-}
+        }
+    }
