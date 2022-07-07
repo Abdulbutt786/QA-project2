@@ -47,3 +47,5 @@ def calories_gen():
 
 
     return str(allcalories)
+
+    
