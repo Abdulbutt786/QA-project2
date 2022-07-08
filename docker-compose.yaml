@@ -25,7 +25,7 @@ services:
     networks:
       - meal-net
   service4:
-    image: abdulbutt123/overallcalories:v1
+    image: abdulbutt123/overallcalories:v2
     build: ./service_4
     container_name: service4
     deploy:

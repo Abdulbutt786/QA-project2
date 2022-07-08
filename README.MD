@@ -39,9 +39,13 @@ The application I have chosen to build is an meal roulette generator.
 The purpose of this application is to choose a random breakfast from a specific list I made and choose a random lunch meal from another list I made.
   
 The application uses a microservice architecture, explained below:
-* Service 1 - Front-End: This is where the user interacts with the web page and displays all the services combined.
-* Service 2 - breakfast API: GET request that generates a random breakfast meal.
-* Service 3 - lunch: GET request that generates a random lunch meal.
-* Service 4 - calories: Post requests which displays service 1 and adds up the calories off both the breakfast and lunch meals.
+* 
+Service 1 - Front-End: This is where the user interacts with the web page and displays all the services combined.
+* 
+Service 2 - breakfast API: GET request that generates a random breakfast meal.
+* 
+Service 3 - lunch: GET request that generates a random lunch meal.
+* 
+Service 4 - calories: Post requests which displays service 1 and adds up the calories off both the breakfast and lunch meals.
 
 Altogether the appication will generate them a random breakfast meal and lunch and will tell the user the calories off both meals combined. 
