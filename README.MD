@@ -59,4 +59,34 @@ This is another picture once a refresh has been done and shows need info has bee
 
 ![Main](https://github.com/Abdulbutt786/QA-project2/blob/6a4e281a39b12e2baaa21d0b1dc698c5bb4cf040/images/Mainpage.png)
 
-![Risk Assessment]()
+
+
+Below is the risk assessment for the SFIA2 application. The full risk assessment can be viewed here: https://docs.google.com/spreadsheets/d/1sRQDBjGwsqQNldhdVXTh3Z9JooZ77M9lWruPBY74Pes/edit?usp=sharing
+
+![Risk Assessment](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/risk%20assesment.png)
+
+I have created a risk which would highlight the risks I would face when creating the application and how I would action a solution in order to resolve them. These will help me from mitigating the threats to my application to better the security in order to get it deployed as quickly and safely as possible with no bugs.
+
+# Testing
+
+Unit testing is used to verify that individual aspects of the app function correctly. This was a control measured realised before starting the project this was marked as priority to ensure the user has the correct use of the app.
+
+The pictures below show the jenkins automated unit tests off each service which I have achieved 100% coverage. The command used in order to print these results to the terminal is : 
+
+* python3 -m pytest --cov --cov-report xml -v
+
+In addition you can use:
+
+* python3 -m pytest --cov --cov-report term-missing
+
+This command will check if theres any part off the code your missing that you havent tested. Fortunately, I have achieved 100% on every service.
+
+
+
+![Coverage1](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/service1.png)
+![Coverage2](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/serrvice2.png)
+![Coverage3](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/service3.png)
+![Coverage2](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/service4.png)
+
+However, the project is now set up to automatically conduct tests via Jenkins every time a push is made to the GitHub repository. These tests can be seen running in the console output of the Jenkins job each time the build is run.
+
