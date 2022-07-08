@@ -55,5 +55,7 @@ Altogether the appication will generate them a random breakfast meal and lunch a
 
 This shows a picture off my main and only screen you can see it generates the random breakfast and lunch and the calories off both meals together. As you refresh the page it will generate new set off information. 
 
-This is another picture once a refresh has been done
+This is another picture once a refresh has been done and shows need info has been printed: 
+
+![Main](https://github.com/Abdulbutt786/QA-project2/blob/6a4e281a39b12e2baaa21d0b1dc698c5bb4cf040/images/Mainpage.png)
 
