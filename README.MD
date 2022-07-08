@@ -88,5 +88,12 @@ This command will check if theres any part off the code your missing that you ha
 ![Coverage3](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/service3.png)
 ![Coverage2](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/service4.png)
 
-However, the project is now set up to automatically conduct tests via Jenkins every time a push is made to the GitHub repository. These tests can be seen running in the console output of the Jenkins job each time the build is run.
+The project is now set up to automatically conduct tests via Jenkins every time a push is made to the GitHub repository. These tests can be seen running in the console output of the Jenkins job each time the build is run.
 
+# CI Pipeline
+
+For my github repository I used the feature branch model and then merge them into one. I created a feature off all service and once the tests for each were completed they were merged. 
+
+You can see the feature branches below:
+
+![Feature](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/service4.png)
