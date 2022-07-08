@@ -96,4 +96,35 @@ For my github repository I used the feature branch model and then merge them int
 
 You can see the feature branches below:
 
-![Feature](https://github.com/Abdulbutt786/QA-project2/blob/81eafc86dad3959b2da915704978bc61e320a81f/images/service4.png)
+![Feature](https://github.com/Abdulbutt786/QA-project2/blob/19bbc1c07d0204afbc3602b0fa29685fffb880b3/images/Branches.png)
+
+Jenkins was used as a build server in order to automate the tests, the various build steps and deployment. This is achieved by creating a pipeline project via Jenkins, the project uses Anisble and Docker Swarm to deploy the application. A webhook is used to continuously integrate changes whenever a commit is pushed to the GitHub Repository.  
+
+Below I will show you the pipeline process that jenkins conducts: 
+
+![Jenks](https://github.com/Abdulbutt786/QA-project2/blob/19bbc1c07d0204afbc3602b0fa29685fffb880b3/images/Jenkins%20build.png)
+
+As I said a webhook is set up so as soon a push is made to my dev branch - jenkins will automatically start the automation off the pipeline.
+
+Pipeline process:
+
+1. Runs unit tests for each of the 4 services
+2. Runs the Ansible playbook, which installs relevant docker packages (See below images for further explanation)
+3. Building and pushing images to dockerhub with my credentials
+4. Copies the docker-compose.yaml file and the nginx.conf file to the Docker swarm manager VM and deploys the application from there
+
+Once the jenkins pipeline is complete. It roughly takes about 5 minutes, once complete, we will able to go the IP addresses on our GCP of the docker swarm manager and worker and access the website. 
+
+This picture below shows the CI/CD Pipline:
+
+![Jenks pipline](https://github.com/Abdulbutt786/QA-project2/blob/19bbc1c07d0204afbc3602b0fa29685fffb880b3/images/Pipline.png)
+
+# Challenges
+
+I faced many issues especially with jenkins this is the reason I was had over 120 jenkins builds for my projects. However, these errors were different errors all the time and most simple to fix. This gave me alot off experience with troubleshooting in general. 
+
+In addition, to this the unit testing was quite different from the first result as we had to mock in results to our website which was something i hadn't done before. 
+
+# Future-Work
+
+In conclusion, this project was uch different to the first one as the focus was primarily on using all the automation and build tools. I love to make the website to make more aesthetic pleasing and maybe even make a homepage before to this current page I have. 
