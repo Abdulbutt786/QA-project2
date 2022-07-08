@@ -34,6 +34,8 @@ The tools I will use for each of the constraints are listed below:
 I used a trello board to keep track off all the tasks needed to completed to create, run and build the app. The initial trello board is below:
 
 
+
+
 ## The App
 The application I have chosen to build is an meal roulette generator.
 The purpose of this application is to choose a random breakfast from a specific list I made and choose a random lunch meal from another list I made.
@@ -50,3 +52,8 @@ The application uses a microservice architecture, explained below:
 Altogether the appication will generate them a random breakfast meal and lunch and will tell the user the calories off both meals combined. 
 
 ![Main image](https://github.com/Abdulbutt786/QA-project2/blob/e107eab3bfc11741f5756231888dee417807a04d/images/Mainpage2.png)
+
+This shows a picture off my main and only screen you can see it generates the random breakfast and lunch and the calories off both meals together. As you refresh the page it will generate new set off information. 
+
+This is another picture once a refresh has been done
+
