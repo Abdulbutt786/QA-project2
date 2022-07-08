@@ -33,7 +33,11 @@ The tools I will use for each of the constraints are listed below:
 ## Project Planning:  
 I used a trello board to keep track off all the tasks needed to completed to create, run and build the app. The initial trello board is below:
 
+![Main image](https://github.com/Abdulbutt786/QA-project2/blob/e0f4ece369de1bb9e03012b6e83b2828d80d9220/images/trellostart.png)
 
+After the project is complete you can see the majority off my trello board tasks are completed as shown below:
+
+![Main imae](https://github.com/Abdulbutt786/QA-project2/blob/e0f4ece369de1bb9e03012b6e83b2828d80d9220/images/trello%20end.png)
 
 
 ## The App
