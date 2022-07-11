@@ -134,3 +134,5 @@ In addition, to this the unit testing was quite different from the first result 
 In conclusion, this project was uch different to the first one as the focus was primarily on using all the automation and build tools. I love to make the website to make more aesthetic pleasing and maybe even make a homepage before to this current page I have. 
 
 Credits: Leon, Earl and Adam! Great lecturer's help me get through my project with ease.
+
+THANK YOU!
